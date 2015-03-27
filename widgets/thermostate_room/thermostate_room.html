@@ -1,0 +1,24 @@
+<h1 class="title" data-bind="title"></h1>
+
+<div style="margin-top: 30px">
+<img class="heating-icon" src="/images/override.png"/>
+</div>
+<span class="temperature-value" id="id | append '_setpoint'">90 C</span> / 
+<span class="setpoint-value" id="id | append '_setpoint'">90 C</span>
+
+<div class="setpoint" style="width:90%; margin:15px;"></div>
+<!--<div>
+<input class="temperature thermometer" data-angleOffset=-125 data-angleArc=250 data-width=160 data-height=160 data-readOnly=false data-thickness=".35" data-cursor="true" data-step="0.2" data-bind-value="setpoint | prettyNumber" data-bind-data-min="min" data-bind-data-max="max">
+</div>
+-->
+
+
+<div class="widget-bottom"> 
+	<div id="radio_therm" class="thermostate_state">
+		<input type="radio" data-bind-id="id | append '_low'" name="radio"  data-bind="low"><label data-bind-for="id | append '_low'">laag</label>
+		<input type="radio" data-bind-id="id | append '_high'" name="radio" data-bind="high"><label data-bind-for="id | append '_high'">hoog</label>
+	</div>
+
+	<p class="updated-at" data-bind="updatedAtMessage"></p>
+
+</div>

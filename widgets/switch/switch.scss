@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #4b4b4b;
+$title-color:       darken(#ffffff, 15%);
+$moreinfo-color:    darken(#ffffff, 15%);
+$updated-at-color: darken(#ffffff, 30%);
+
+// ----------------------------------------------------------------------------
+// Widget-image styles
+// ----------------------------------------------------------------------------
+.widget-switch { 
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+  }
+  .more-info {
+    color: $moreinfo-color;
+  }
+  .updated-at {
+    color: $updated-at-color;
+  }
+
+}
+
+

@@ -1,0 +1,95 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #9c4274;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+
+$temperature-background:  darken($background-color, 15%);
+
+// ----------------------------------------------------------------------------
+// Widget-temperature styles
+// ----------------------------------------------------------------------------
+.widget-thermostate-room {
+
+  background-color: $background-color;
+
+  input.temperature {
+    background-color: $temperature-background;
+    color: #fff;
+  }
+
+  .widget-bottom {
+	  position: absolute;
+	  bottom: 30px;
+	  left: 0;
+	  right: 0;
+  }
+	.title {
+    color: $title-color;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .setpoint-value {
+    color: $title-color;
+	font-size: 200%;
+  }
+  .temperature-value {
+    color: white;
+	font-size: 300%;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+	padding-bottom: 40px;
+  }
+  
+  .setpoint {
+	  width: 160px;
+	  height: 10px;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+.thermometer-outer {
+  background: #c4f0ff;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  height: 20px;
+  width: 100%;
+}
+.thermometer-inner {
+  background: #3f83f7;
+  height: 20px;
+}
+	
+.ui-button-text-only .ui-button-text {
+  padding: 4pt 4pt;
+  color: $background-color;
+}
+
+.ui-button {
+  background: lighten($background-color, 20.);
+}
+.ui-state-active {
+  background: white;
+}
+
+.ui-slider .ui-slider-handle {
+	width: 20px;
+	height: 20px;
+	
+}
+
+
+}
