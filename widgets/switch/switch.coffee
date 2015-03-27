@@ -21,6 +21,9 @@ class Dashing.Switch extends Dashing.Widget
 
 	@accessor 'idx'
 	
+	@accessor 'lastUpdate', ->
+		(new Date(Date.parse( @get('LastUpdate') ))).toISOString()
+	
 	@accessor 'difference', ->
 		if @get('last')
 			last = parseInt(@get('last'))

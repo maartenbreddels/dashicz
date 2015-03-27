@@ -24,6 +24,7 @@ def js():
 		'dashing/templates/project/assets/javascripts/gridster/jquery.leanModal.min.js',
 
 		'javascript/jquery-ui.js',
+		'javascript/jquery.ui.touch-punch.js',
 
 		'javascript/dashicz.coffee',
 		'dashing/templates/project/assets/javascripts/dashing.gridster.coffee',
@@ -32,6 +33,8 @@ def js():
 		'dashing/templates/project/assets/javascripts/rickshaw-1.4.3.min.js',
 		'dashing/templates/project/assets/javascripts/application.coffee',
 		'javascript/application_dashicz.coffee',
+		'jquery-timeago/jquery.timeago.js',
+		'jquery-timeago/locales/jquery.timeago.nl.js', # change to your language
 		]
 
 	for name in widgets:

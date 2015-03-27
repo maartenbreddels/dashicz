@@ -1,3 +1,6 @@
 [submodule "dashing"]
 	path = dashing
 	url = https://github.com/Shopify/dashing
+[submodule "jquery-timeago"]
+	path = jquery-timeago
+	url = https://github.com/rmm5t/jquery-timeago/

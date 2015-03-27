@@ -224,6 +224,8 @@ domoticz_update = ->
 							for widget in widgets[device.Name]
 								widget.receiveData(device)
 				Dashing.update_composites(Dashing.lastEvents)
+				console.log("timeago")
+				$("p.updated-at").timeago();
 				#console.log(Dashing.widgets["Slaapkamer groot Temperatuur"])
 		error: (data, textStatus, jqXHR) ->
 				console.log("error "+data)
