@@ -1,14 +1,19 @@
 class Dashing.Graph extends Dashing.Widget
 	@accessor 'points'
+	@accessor 'type'
+	@accessor 'units'
+	@accessor 'sensor'
+	
 	
 	@accessor 'idx', 
 		set: (key, value) ->
 			console.log "setting idx for #{@id}"
 			data = 
 				type: "graph"
-				sensor: "temp"
+				sensor: @get("sensor")
 				idx: value  
 				range: "day"
+			dataname = @get("type")
 			$.ajax
 				url: '/json.htm'
 				context: @
@@ -23,7 +28,7 @@ class Dashing.Graph extends Dashing.Widget
 					for value in data["result"]
 						dataxy.push
 							x: Date.parse(value["d"]) / 1000 
-							y: value["te"]
+							y: value[dataname]
 					console.log("Setting points")
 					console.log(dataxy)
 					@set('points', dataxy)

@@ -25,7 +25,7 @@ def js():
 
 		'javascript/jquery-ui.js',
 
-		'dashing/javascripts/dashicz.coffee',
+		'javascript/dashicz.coffee',
 		'dashing/templates/project/assets/javascripts/dashing.gridster.coffee',
 
 		'dashing/templates/project/assets/javascripts/jquery.knob.js',

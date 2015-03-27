@@ -17,8 +17,9 @@ class Dashing.Status extends Dashing.Widget
 			for device_name in device_names.split(",")
 					data["items"].push
 						label: device_name
-						on: devices[device_name].Data == "On"
-						off: devices[device_name].Data == "Off"
+						on: devices[device_name]?.Data == "On"
+						off: devices[device_name]?.Data == "Off"
+						error: devices[device_name] == undefined
 						
 			console.log(data)
 			return data
