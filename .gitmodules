@@ -1,6 +1,6 @@
 [submodule "dashing"]
 	path = dashing
-	url = ./dashing
+	url = https://github.com/Shopify/dashing
 [submodule "dashing.io"]
 	path = dashing.io
 	url = https://github.com/Shopify/dashing
