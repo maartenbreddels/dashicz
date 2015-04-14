@@ -9,7 +9,7 @@ git clone https://github.com/maartenbreddels/dashicz --recursive
 cd dashicz
 cp example.html index.html
 ```
-Open [http://localhost:8080/dashicz/example.html](http://localhost:8080/dashicz/example.html)
+Open [http://localhost:8080/dashicz/index.html](http://localhost:8080/dashicz/index.html)
 
 # Installing
 ## Get the source
@@ -25,7 +25,7 @@ You may want to copy example.html to index.html
 cp example.html index.html
 ````
 Edit the index.html, and you are done! Now open your browser and point it to (probably)
-[http://localhost:8080/dashicz/example.html](http://localhost:8080/dashicz/example.html)
+[http://localhost:8080/dashicz/index.html](http://localhost:8080/dashicz/index.html)
 
 # Developing
 
