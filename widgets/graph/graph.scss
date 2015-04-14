@@ -29,6 +29,11 @@ $tick-color:        rgba(0, 0, 0, 0.4);
     position: relative;
     z-index: 99;
   }
+  . x_tick plain {
+	  .title {
+		  font-size: 12pt;
+	  }
+  }
 
   .title { 
     color: $title-color;

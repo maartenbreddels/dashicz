@@ -50,8 +50,6 @@ class Dashing.Switch extends Dashing.Widget
 			$(@get('node')).addClass("status-#{data.status}")
 		
 		
-	ready: ->
-	# This is fired when the widget is done being rendered
 
 	onData: (data) ->
 		# Handle incoming data
@@ -73,7 +71,16 @@ class Dashing.Switch extends Dashing.Widget
 			#	$.post("/dz/on/", data={id : widget.id})
 		)
 		console.log("bind")
-		
+	ready: ->
+	# This is fired when the widget is done being rendered
+		$('.dimmer').slider()
+		$(@node).find('.dimmer').slider
+			orientation: "horizontal"
+			animate: "fast"
+			value: 20
+			min: -10
+			max: 40
+		console.log("MADE DIMMER")
 		
 	
 	

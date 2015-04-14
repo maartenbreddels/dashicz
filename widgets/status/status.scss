@@ -12,12 +12,14 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 // Widget-list styles
 // ----------------------------------------------------------------------------
 .widget-status { 
+	padding: 0;
 
   background-color: $background-color;
   vertical-align: top;
 
   .title { 
     color: $title-color;
+	font-size: 12pt;
   }
 
   ol, ul {
@@ -33,7 +35,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   li {
     margin-bottom: 5px;
 	position: relative;
-	font-size: 10pt;
+	font-size: 8pt;
+  }
+  ul {
+	  margin: 5px;
   }
 
 	.gs_w {

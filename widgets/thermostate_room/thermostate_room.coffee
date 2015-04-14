@@ -159,6 +159,7 @@ class Dashing.ThermostateRoom extends Dashing.Widget
 			value: @.get('setpoint')
 			min: -10
 			max: 40
+			step: 0.2
 			slide: (event, ui ) ->
 				#event.preventDefault()
 				$(widget.node).find(".setpoint-value").html(Number(ui.value).toFixed(1).toString())

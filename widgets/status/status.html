@@ -2,10 +2,10 @@
 
 <ul class="list-nostyle">
   <li data-foreach-item="items"  style="position: relative">
-    <span class="value">
+    <span class="value" style="margin: 0;">
 		<span data-showif="item.error">Device missing?</span>
-		<img src="/images/Light48_On.png" class="value" data-showif="item.on" width="26px">
-		<img src="/images/Light48_Off.png" class="value" data-showif="item.off" width="26px">
+		<img src="/images/Light48_On.png" class="value" data-showif="item.on" width="26px" style="margin: 0;">
+		<img src="/images/Light48_Off.png" class="value" data-showif="item.off" width="26px" style="margin: 0;">
 	</span>
     <span class="label" data-bind="item.label"></span>
   </li>

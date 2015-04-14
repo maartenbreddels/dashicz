@@ -5,7 +5,7 @@ import os
 logging.basicConfig()
 log = logging.getLogger(__name__)
 
-widgets = "thermostate_room status graph switch text".split()
+widgets = "thermostate_room status graph switch text buienradar dimmer".split()
 
 def js():
 	import coffeescript
@@ -32,6 +32,7 @@ def js():
 		'dashing/templates/project/assets/javascripts/jquery.knob.js',
 		'dashing/templates/project/assets/javascripts/rickshaw-1.4.3.min.js',
 		'dashing/templates/project/assets/javascripts/application.coffee',
+
 		'javascript/application_dashicz.coffee',
 		'jquery-timeago/jquery.timeago.js',
 		'jquery-timeago/locales/jquery.timeago.nl.js', # change to your language

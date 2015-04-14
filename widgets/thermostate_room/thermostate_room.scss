@@ -12,6 +12,7 @@ $temperature-background:  darken($background-color, 15%);
 // Widget-temperature styles
 // ----------------------------------------------------------------------------
 .widget-thermostate-room {
+padding: 0;
 
   background-color: $background-color;
 
@@ -21,17 +22,18 @@ $temperature-background:  darken($background-color, 15%);
   }
 
   .widget-bottom {
-	  position: absolute;
+//	  position: absolute;
 	  bottom: 30px;
 	  left: 0;
 	  right: 0;
   }
 	.title {
     color: $title-color;
-	position: absolute;
+	//position: absolute;
+	font-size: 14pt;
 	left: 0;
 	right: 0;
-	top: 30px;
+	//top: 30px;
   }
 
   .title {
@@ -40,11 +42,11 @@ $temperature-background:  darken($background-color, 15%);
 
   .setpoint-value {
     color: $title-color;
-	font-size: 200%;
+	font-size: 150%;
   }
   .temperature-value {
     color: white;
-	font-size: 300%;
+	font-size: 200%;
   }
 
   .more-info {

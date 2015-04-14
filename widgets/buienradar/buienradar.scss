@@ -1,34 +1,32 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #4b4b4b;
-$title-color:       darken(#ffffff, 15%);
-$moreinfo-color:    darken(#ffffff, 15%);
-$updated-at-color: darken(#ffffff, 30%);
+$background-color:  #ec663c;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
 
 // ----------------------------------------------------------------------------
-// Widget-image styles
+// Widget-text styles
 // ----------------------------------------------------------------------------
-.widget-switch { 
+.widget-buienradar { 
 
   background-color: $background-color;
-
-  .title {
+  
+  .title { 
     color: $title-color;
-	font-size: 14pt;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 12px;
   }
+
   .more-info {
     color: $moreinfo-color;
   }
+
   .updated-at {
-    color: $updated-at-color;
-	font-size: 8pt;
+    color: rgba(255, 255, 255, 0.7);
   }
+  
 
+  &.large h3 {
+    font-size: 65px;
+  }
 }
-
-
