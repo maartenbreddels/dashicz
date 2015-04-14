@@ -1,6 +1,16 @@
 # dashicz
 Dashicz is [Dashing.io](http://dashing.io) (nice dashboard) for [Domoticz](domoticz.com) (home automation), [and looks something like this](https://cloud.githubusercontent.com/assets/1765949/6875062/839ee1b6-d4bc-11e4-9b1a-1b08cb4419b4.png). It doesn't need a server, you simply unpack it in the domoticz/www directory, and manage the dashboard by editing the example html file. It's purpose is a nice user friendly dashboard to control your house from a tablet for instance.
 
+# Impatient?
+Run:
+```
+cd domoticz/www
+git clone https://github.com/maartenbreddels/dashicz --recursive
+cd dashicz
+cp example.html index.html
+```
+Open [http://localhost:8080/dashicz/example.html](http://localhost:8080/dashicz/example.html)
+
 # Installing
 ## Get the source
 ```
@@ -8,6 +18,16 @@ cd domoticz/www
 git clone https://github.com/maartenbreddels/dashicz --recursive
 ```
 The recusive part makes sure you also get dashing.io
+
+## Edit the html file
+You may want to copy example.html to index.html
+```
+cp example.html index.html
+````
+Edit the index.html, and you are done! Now open your browser and point it to (probably)
+[http://localhost:8080/dashicz/example.html](http://localhost:8080/dashicz/example.html)
+
+# Developing
 
 ## Install python libraries
 This is fool proof, assuming you have python.
@@ -60,9 +80,10 @@ Now execute this:
 watchmedo shell-command --patterns="*.scss;*.js;*.coffee"     --recursive     --command='python compile.py' -W
 ```
 ## Making a new widget
- * Create widgets/foo/foo.coffee (and have a class Dashing.Foo, see other widgets for an example)
- * Create widgets/foo/foo.html 
- * Create widgets/foo/foo.scss (make sure it starts with `.widget-foo {` )
+ * Run `sh new_widget.sh switch foo` to create a widget called foo based on switch, or do the following:
+  * Create widgets/foo/foo.coffee (and have a class Dashing.Foo, see other widgets for an example)
+  * Create widgets/foo/foo.html 
+  * Create widgets/foo/foo.scss (make sure it starts with `.widget-foo {` )
  * Add "foo" to the list in compile.py
  * Execute compile.py
  * Add <div data-id="Your domociz device name" data-view="Foo"/> to index.html 
