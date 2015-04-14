@@ -1,0 +1,40 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #9c4274;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+
+$meter-background:  darken($background-color, 15%);
+
+// ----------------------------------------------------------------------------
+// Widget-meter styles
+// ----------------------------------------------------------------------------
+.widget-dimmer {
+	padding: 0;
+  background-color: $background-color;
+
+  input.meter {
+    background-color: $meter-background;
+    color: #fff;
+  }
+
+  .title {
+    color: $title-color;
+	font-size: 14pt;
+	left: 0;
+	right: 0;
+	top: 12px;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+	font-size: 8pt;
+  }
+
+}
