@@ -38,7 +38,7 @@ python get-pip.py --user
 ```
 Otherwise, simpy do:
 ```
-sudo pip pScss coffeescript
+sudo pip install pyScss coffeescript
 ```
 
 ## Install coffeescript
