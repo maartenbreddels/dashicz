@@ -1,6 +1,9 @@
 # dashicz
 Dashicz is [Dashing.io](http://dashing.io) (nice dashboard) for [Domoticz](domoticz.com) (home automation), [and looks something like this](https://cloud.githubusercontent.com/assets/1765949/6875062/839ee1b6-d4bc-11e4-9b1a-1b08cb4419b4.png). It doesn't need a server, you simply unpack it in the domoticz/www directory, and manage the dashboard by editing the example html file. It's purpose is a nice user friendly dashboard to control your house from a tablet for instance.
 
+# Screenshot
+![screenshot](https://cloud.githubusercontent.com/assets/1765949/6875062/839ee1b6-d4bc-11e4-9b1a-1b08cb4419b4.png)
+
 # Impatient?
 Run:
 ```
